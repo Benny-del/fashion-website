@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trends - Site de Moda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .banner {
+            background: url('fashion-banner.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .banner h1 {
+            font-size: 3em;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .collection {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .collection-item {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .collection-item img {
+            width: 100%;
+            height: auto;
+        }
+        .collection-item h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .feedback {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Trends</h1>
+        <p>Seu destino para as últimas tendências da moda</p>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Coleções</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+    <div class="banner">
+        <h1>Descubra seu estilo!</h1>
+    </div>
+    <section class="content">
+        <h2>Novas Coleções</h2>
+        <div class="collection">
+            <div class="collection-item">
+                <img src="colecao-verao.jpg" alt="Coleção Verão">
+                <h3>Coleção Verão 2024</h3>
+            </div>
+            <div class="collection-item">
+                <img src="colecao-outono.jpg" alt="Coleção Outono">
+                <h3>Coleção Outono 2024</h3>
+            </div>
+            <div class="collection-item">
+                <img src="colecao-inverno.jpg" alt="Coleção Inverno">
+                <h3>Coleção Inverno 2024</h3>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="content feedback">
+        <h2>Deixe seu Feedback</h2>
+        <form>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Fashion Trends &copy; 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
